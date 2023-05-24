@@ -1,0 +1,229 @@
+*,
+::before,
+::after {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', serif;
+  display: flex;
+  flex-direction: column;
+  background: #f8f5f1;
+  position: relative;
+}
+
+.player-active{
+  color: #ff7300;
+}
+
+header h1, header span{
+  background: #ff7300;
+  margin: 0.5px;
+  font-size: 50px;
+  font-weight: 900;
+  padding: 40px;
+  color: #f8f5f1;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+main{
+  position: relative;
+  width: 97%;
+  height: 630px;
+  max-width: 1200px;
+  margin: auto;
+  top: 25px;
+}
+
+.wrapper{
+  text-align: center;
+  display: flex;
+  margin-top: 20px;
+  gap: 3rem;
+  margin-bottom: 50px;
+}
+
+.newGame-btn{
+  position: relative;
+  margin: auto;
+  max-width: 1200px;
+  width: 97%;
+  text-align: center;
+}
+
+.new-btn{
+  font-family:  'Lato', serif;
+  margin-top: 0px;
+  margin-left: 550px;
+  height: 54px;
+  border-radius: 5px;
+  padding: 10px 40px;
+  position: relative;
+  margin: auto;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #194350;
+  color: #f8f5f1;
+  font-weight: 900;
+  text-align: center;
+  font-size: 30px; 
+}
+
+.current{
+  background: #ff7300;
+  position: relative;
+  top: 255px;
+  color: #f8f5f1;
+  padding: 10px 90px;
+  border-radius: 5px;
+  
+}
+
+.current_hold, .current_score{
+  font-size: 30px;
+}
+
+.goal{
+  margin-top: 20px;
+}
+
+#score0, #score1, #score-max1, 
+#score-max2, #player_name0, 
+#player_name{
+  font-size: 40px;
+}
+
+.play-btn{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: -200px;
+}
+
+.roll-btn{
+  margin-top: 250px;
+  margin-bottom: 20px;
+}
+
+.hold-btn{
+  padding: 20px;
+}
+
+.roll-btn, .hold-btn{
+  background: #194350;
+  color: #f8f5f1;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Lato', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px 40px;
+  font-size: 30px;
+}
+
+.container-dice{
+  margin: auto;
+  position: relative;
+  top: 70px;
+}
+
+.dice{
+  width: 150px;
+}
+
+footer{
+  font-family: 'Lato', serif;
+  background: #194350;
+  margin-top: 65px;
+  padding: 2%;
+  color: #f8f5f1;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px){
+  header{
+    margin-bottom: -12px;
+    margin-top: -50px;
+  }
+  .new-btn{
+    font-size: 15px;
+  }
+  main{
+    margin-top: -20px;
+  }
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  .player{
+    margin-top: -55px;
+    font-size: 1px;
+  }
+
+  .container-dice{ 
+    margin-top: -155px;
+    margin-bottom: 50px;
+  }
+  .player2{
+    margin-top: -30px;
+    margin-bottom: -300px;
+  }
+  #score0, #score1, #score-max1, 
+  #score-max2, #player_name0, 
+  #player_name{
+  font-size: 20px;
+  }
+  .score{
+    margin-top: -20px;
+  }
+  .roll-btn, .hold-btn{
+    font-size: 15px;
+    margin-top: -25px;
+    margin-bottom: -55px;
+    margin: 5px;
+  }
+  .roll-btn{
+    margin-top: 20px;
+  }
+  .current{
+    font-size: 10px;
+    margin-top: 70px;
+  }
+  .current1, .current2{
+    margin-bottom: -50px;
+    
+    font-size: 20px;
+  }
+  .current_{
+    margin-top: 75px;
+    margin-bottom: -100px;
+  }
+  .current-{
+    margin-top: -50px;
+  }
+  .currentScore1, .currentScore2{
+    margin-top: 45px;
+    font-size: 20px;
+  }
+  footer{
+    margin-top: -80px;
+    padding: 4.3%;
+  }
+} 
